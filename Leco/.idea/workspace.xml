@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983cb0a0-558c-4c44-a093-1f1d1df53119" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../student/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../student/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../user/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../user/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../user/serializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../utils/field_validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../utils/field_validators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../utils/strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../utils/strings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +87,7 @@
       <workItem from="1585611908735" duration="650000" />
       <workItem from="1585613717795" duration="1180000" />
       <workItem from="1585615385687" duration="1045000" />
-      <workItem from="1585649954185" duration="14022000" />
+      <workItem from="1585649954185" duration="18331000" />
     </task>
     <servers />
   </component>

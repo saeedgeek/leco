@@ -5,7 +5,7 @@ from utils import strings
 from rest_framework.permissions import IsAuthenticated
 
 from .models import Profile
-from .serializer import ProfileImageSerializer, ProfileSerializer, ResetPassWordSerializer
+from .serializer import ProfileImageSerializer, ProfileSerializer, ResetPassWordSerializer, ChangePassWordSerializer
 
 
 class GetCityList(APIView):
@@ -83,3 +83,26 @@ class ResetPassword(APIView):
 
         else:
             return response(condition=0, message=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class ChangePassword(APIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class=ChangePassWordSerializer
+    def patch(self,request):
+        serializer = self.serializer_class(data=request.data)
+        if serializer.is_valid():
+            password=serializer.validated_data.get("password")
+            user=request.user
+            if user.check_password(password):
+                newpassword=serializer.validated_data.get("newpassword")
+                user.set_password(newpassword)
+                user.save()
+                msg=strings.password_change
+                return response(condition=1, message=msg, status=status.HTTP_200_OK)
+
+            else:
+                msg = strings.wrong_password
+                return response(condition=0, message=msg, status=status.HTTP_401_UNAUTHORIZED)
+        else:
+            return response(condition=0, message=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+

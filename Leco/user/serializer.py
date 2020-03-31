@@ -1,4 +1,6 @@
 from rest_framework import serializers
+
+from utils.field_validators import password_regex
 from .models import Profile
 
 
@@ -55,3 +57,9 @@ class ResetPassWordSerializer(serializers.ModelSerializer):
                 'validators': []
             },
         }
+
+class ChangePassWordSerializer(serializers.ModelSerializer):
+    newpassword = serializers.RegexField(regex=password_regex.regex, max_length=128)
+    class Meta:
+        model = Profile
+        fields = ('password', 'newpassword')
