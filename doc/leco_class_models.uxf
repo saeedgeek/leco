@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>747</x>
+      <y>36</y>
+      <w>234</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>appName:user
+profile 
+--
+-first_name : str 
+-last_name : str
+-user_name : nationalcode
+-image : ImageField
+phone_number
+user_type
+
+--
++change(profile)
++set_prodile_image()
++get_all_cities()
++get_allField()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>234</x>
+      <y>306</y>
+      <w>279</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>appName:user
+student
+--
+-nation_code
+father_name
+-father_phone number
+Field
+level
+Birthـcertificate
+--
++get_list_of_registerd_class()
++get_list_of_favorite_class()
++add_to_favorite_class()
++pay_money_for_class()
++see_class_content()
++get_his_lesson_city_and_field()
++login()
++sign_up()
++see_her_grade()
++get_profile()
++change_profile()
++see_median_of_class_grade()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>1935</w>
+      <h>639</h>
+    </coordinates>
+    <panel_attributes>user_app
+--
+bg=orange
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>657</x>
+      <y>333</y>
+      <w>225</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>appName:user
+teacher
+
+--
+secound_phone(not necessary)
+--
++see_all_member_of_class(class)
++set_class_content()
++set-present_absent()
++see_student_detail()
++login_complete_info()
++set_final_grade()
++share_to_another_class()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>144</x>
+      <y>846</y>
+      <w>1917</w>
+      <h>918</h>
+    </coordinates>
+    <panel_attributes>class_room
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1548</x>
+      <y>243</y>
+      <w>198</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>appName:user
+center
+--
+
+
+--
++login_with_phone()
++serach_from_city_class_agent()
++see_all_agent()
++see_all_subagent(agent)
++see_all_class_of_agent(agent)
++see_all_member_of_class(class)
++see_student_detail()
++crate_agent(city,phone_number)
++see_absent_present(class)
++addfield()
++add_lesson()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1035</x>
+      <y>342</y>
+      <w>225</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>appName:user
+agent
+--
+address:str
+
+--
+create_sub_Agent()
++see_all_subagent(agent)
++see_all_class_of_agent()
++see_all_member_of_class(class)
++see_student_detail()
++see_present_absent(class)
++create_teacher()
++create_class()
++</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>1197</y>
+      <w>225</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>appName:class_room
+class_room
+--
+-name:str
+-code:uuid
+-fee:PositiveSmallInteger
+-semester:PositiveSmallInteger
+-time</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1638</x>
+      <y>1197</y>
+      <w>315</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>appName:class_room
+content
+--
+-text
+-media
+-time
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>1251</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>appName:class_room
+lesson
+--
+-name:str
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>711</x>
+      <y>504</y>
+      <w>81</w>
+      <h>765</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+
+done</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;830.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1404</x>
+      <y>1242</y>
+      <w>252</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+--
+
+data_time:str
+
+done</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>558</y>
+      <w>873</w>
+      <h>657</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+
+is_register:boolean
+grade:positiveSmallInt
+
+done</panel_attributes>
+    <additional_attributes>10.0;10.0;950.0;710.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>819</x>
+      <y>504</y>
+      <w>558</w>
+      <h>711</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+
+done</panel_attributes>
+    <additional_attributes>10.0;10.0;590.0;770.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1251</x>
+      <y>360</y>
+      <w>315</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+
+
+done</panel_attributes>
+    <additional_attributes>10.0;50.0;330.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>972</x>
+      <y>459</y>
+      <w>162</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..1
+
+done
+
+</panel_attributes>
+    <additional_attributes>140.0;90.0;140.0;170.0;10.0;170.0;10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1188</x>
+      <y>531</y>
+      <w>243</w>
+      <h>684</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..1
+
+done</panel_attributes>
+    <additional_attributes>230.0;740.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>855</x>
+      <y>1152</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>appName:class_room
+present_absebt
+--
+date:Date_time_field()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1035</x>
+      <y>1242</y>
+      <w>171</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+
+
+done</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>423</x>
+      <y>558</y>
+      <w>576</w>
+      <h>612</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+
+done</panel_attributes>
+    <additional_attributes>610.0;660.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>315</x>
+      <y>3303</y>
+      <w>873</w>
+      <h>576</h>
+    </coordinates>
+    <panel_attributes>Note..
+--
+variable_type
+--
+city = {  "name":"" , "persian_name" }  ---&gt; {"name":"tehran" , "persian_name":"تهران}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1737</x>
+      <y>531</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>City
+--
+city_name()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>972</x>
+      <y>108</y>
+      <w>954</w>
+      <h>441</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=0..n
+
+done</panel_attributes>
+    <additional_attributes>1000.0;470.0;1010.0;20.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>1350</y>
+      <w>396</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=0..n
+
+done</panel_attributes>
+    <additional_attributes>10.0;50.0;420.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>972</x>
+      <y>144</y>
+      <w>594</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=0..1
+
+done</panel_attributes>
+    <additional_attributes>640.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>918</x>
+      <y>216</y>
+      <w>225</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=0..1
+done</panel_attributes>
+    <additional_attributes>230.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>765</x>
+      <y>216</y>
+      <w>99</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=0..1
+
+done</panel_attributes>
+    <additional_attributes>10.0;130.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>162</y>
+      <w>333</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=0..1
+
+done
+</panel_attributes>
+    <additional_attributes>10.0;160.0;350.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>405</y>
+      <w>180</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+
+done
+
+</panel_attributes>
+    <additional_attributes>10.0;30.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>549</x>
+      <y>1359</y>
+      <w>189</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..1
+
+
+pre_required
+
+done</panel_attributes>
+    <additional_attributes>170.0;70.0;170.0;110.0;10.0;110.0;10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+</diagram>
