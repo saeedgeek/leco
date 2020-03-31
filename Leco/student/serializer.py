@@ -28,3 +28,18 @@ class StudentRegisterSerializer(serializers.ModelSerializer):
         return profile
 
 
+class StudentExtraSerializer(serializers.ModelSerializer):
+    field = serializers.ChoiceField(choices=FIELD_CHOICES)
+    level = serializers.ChoiceField(choices=LEVEL_CHOICES)
+
+    def to_representation(self, instance):
+        ret = super().to_representation(instance)
+        print("........................................" ,ret)
+        ret['field'] = instance.get_field_display()
+        ret['level'] = instance.get_level_display()
+        return ret
+
+    class Meta:
+        fields = ("field","level","father_name","father_phone_number")
+        model = Student
+

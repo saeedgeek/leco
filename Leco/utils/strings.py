@@ -9,6 +9,7 @@ user_dosent_exist="کاربری با این مشخصات یافت نشد"
 password_changed_to_phone_number="کلمه عبور شما با موفقیت تغییر کرد... کلمه عبور جدید  اکنون همان شماره تلفن شماسس"
 password_change="کلمه عبور شما با موفقیت تغییر کرد"
 wrong_password="کلمه عبور وارد شده اشتباه است"
+student_edu_change="اطلاعات تحصیلی دانش آموز با موفقیت ویرایش شد"
 CITY=[
      {
      "name":"azerbayjan_sh",
