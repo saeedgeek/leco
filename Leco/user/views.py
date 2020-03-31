@@ -3,7 +3,9 @@ from  rest_framework import status
 from utils.make_response import response
 from utils import strings
 from rest_framework.permissions import IsAuthenticated
-from .serializer import ProfileImageSerializer,ProfileSerializer
+
+from .models import Profile
+from .serializer import ProfileImageSerializer, ProfileSerializer, ResetPassWordSerializer
 
 
 class GetCityList(APIView):
@@ -15,7 +17,7 @@ class GetCityList(APIView):
 
 class ProfileImage(APIView):
     permission_classes = [IsAuthenticated]
-    serializer_class = ProfileImageSerializer
+    serializer_class = ResetPassWordSerializer
 
     def post(self, request):
         serializer = self.serializer_class(data=request.data, context={"user": request.user})
@@ -58,6 +60,26 @@ class UserProfile(APIView):
             serializer.save()
             msg=strings.profile_change_successfully
             return response(condition=1, message=msg, status=status.HTTP_200_OK)
+
+        else:
+            return response(condition=0, message=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class ResetPassword(APIView):
+    serializer_class=ResetPassWordSerializer
+    def patch(self,request):
+        serializer = self.serializer_class(data=request.data)
+        if serializer.is_valid():
+            username=serializer.validated_data.get("username")
+            phone_number=serializer.validated_data.get("phone_number")
+            try:
+                profile=Profile.objects.get(username=username, phone_number=phone_number)
+                profile.set_password(profile.phone_number)
+                profile.save()
+                msg=strings.password_changed_to_phone_number
+                return response(condition=1, message=msg, status=status.HTTP_200_OK)
+            except:
+                msg=strings.user_dosent_exist
+                return response(condition=0, message=msg, status=status.HTTP_401_UNAUTHORIZED)
 
         else:
             return response(condition=0, message=serializer.errors, status=status.HTTP_400_BAD_REQUEST)

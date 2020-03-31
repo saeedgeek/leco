@@ -4,6 +4,9 @@ image_upload_successFully="تصویر مورد نظر با موفقیت بارگ
 registerSuccessFullymessage="تبت نام شما با موفقیت انجام شد وارد شوید"
 profile_image_delete_success="تصویر پروفایل با موفقیت حذف شد"
 profile_change_successfully="اطلاعات کاربری شما با موفقیت ویرایش شد"
+user_dosent_exist="کاربری با این مشخصات یافت نشد"
+password_changed_to_phone_number="کلمه عبور شما با موفقیت تغییر کرد... کلمه عبور جدید  اکنون همان شماره تلفن شماسس"
+password_change="کلمه عبور شما با موفقیت تغییر کرد"
 CITY=[
      {
      "name":"azerbayjan_sh",

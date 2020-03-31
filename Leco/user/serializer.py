@@ -44,3 +44,14 @@ class ProfileSerializer(serializers.ModelSerializer):
         print("city=",profile.city)
         return profile
 
+
+
+class ResetPassWordSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Profile
+        fields = ('username', 'phone_number')
+        extra_kwargs = {
+            'username': {
+                'validators': []
+            },
+        }

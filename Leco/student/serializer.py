@@ -6,8 +6,9 @@ from user.models import Profile
 
 
 class StudentRegisterSerializer(serializers.ModelSerializer):
-    field=serializers.ChoiceField(choices=FIELD_CHOICES)
-    level=serializers.ChoiceField(choices=LEVEL_CHOICES)
+    field = serializers.ChoiceField(choices=FIELD_CHOICES)
+    level = serializers.ChoiceField(choices=LEVEL_CHOICES)
+
     class Meta:
         model=Profile
         fields=("first_name","last_name","password","phone_number","city","username","field","level")
@@ -19,8 +20,8 @@ class StudentRegisterSerializer(serializers.ModelSerializer):
             username=validate_data["username"],
             password=validate_data["password"],
             phone_number=validate_data["phone_number"],
-            city="ann abad",
-            user_type="studes"
+            city=validate_data["phone_number"],
+            user_type="student"
         )
         Student.objects.create(profile=profile,field=validate_data["field"],level=validate_data["level"])
 
