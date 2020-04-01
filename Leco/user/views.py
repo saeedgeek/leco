@@ -17,7 +17,7 @@ class GetCityList(APIView):
 
 class ProfileImage(APIView):
     permission_classes = [IsAuthenticated]
-    serializer_class = ResetPassWordSerializer
+    serializer_class = ProfileImageSerializer
 
     def post(self, request):
         serializer = self.serializer_class(data=request.data, context={"user": request.user})
@@ -31,11 +31,9 @@ class ProfileImage(APIView):
 
     def get(self, request):
         user = request.user
-        profie = self.serializer_class(user)
-        msg = profie.data
+        profile = self.serializer_class(user)
+        msg = profile.data
         return response(condition=1, message=msg, status=status.HTTP_200_OK)
-
-
 
     def delete(self, request):
         user = request.user

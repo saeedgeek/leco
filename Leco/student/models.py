@@ -10,7 +10,7 @@ class Student(models.Model):
     father_phone_number = models.CharField(validators=[phone_regex], max_length=10, blank=True,null=True)
     field=models.CharField(max_length=7,choices=FIELD_CHOICES)
     level=models.CharField(max_length=2,choices=LEVEL_CHOICES)
-    birth_certificate=models.ImageField(upload_to='student_profile',null=True,blank=True)
+    birth_certificate=models.ImageField(upload_to='student_birth_certificate',null=True,blank=True)
     profile=models.OneToOneField(to="user.Profile",on_delete=models.CASCADE,related_name="student")
 
     class Meta:

@@ -43,3 +43,15 @@ class StudentExtraSerializer(serializers.ModelSerializer):
         fields = ("field","level","father_name","father_phone_number")
         model = Student
 
+
+class BirthCertificateImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Student
+        fields = ('birth_certificate', )
+
+    def create(self, validated_data):
+        birth_certificate = validated_data["birth_certificate"]
+        student = self.context.get("user").student
+        student.birth_certificate = birth_certificate
+        student.save()
+        return student

@@ -19,8 +19,8 @@ class ProfileImageSerializer(serializers.ModelSerializer):
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = ('first_name','last_name','username','phone_number','city')
-        read_only_fields = ('username','phone_number')
+        fields = ('first_name','last_name','username','phone_number','city','user_type')
+        read_only_fields = ('username','phone_number','user_type')
 
     def to_representation(self, instance):
         """Convert `city` to persian."""
