@@ -1,9 +1,9 @@
-from rest_framework.views import APIView
-from  rest_framework import status
-from utils.make_response import response
-from utils import strings
+from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.views import APIView
 
+from utils import strings
+from utils.make_response import response
 from .models import Profile
 from .serializer import ProfileImageSerializer, ProfileSerializer, ResetPassWordSerializer, ChangePassWordSerializer
 
@@ -15,6 +15,18 @@ class GetCityList(APIView):
         return response(1, strings.CITY, status.HTTP_200_OK)
 
 
+class GetInfo(APIView):
+
+    def get(self, request):
+        msg={
+            "cities": strings.CITY,
+            "fields": strings.FIELD,
+            "levels": strings.LEVEL,
+
+        }
+        return response(1, msg, status.HTTP_200_OK)
+
+
 class ProfileImage(APIView):
     permission_classes = [IsAuthenticated]
     serializer_class = ProfileImageSerializer
@@ -23,7 +35,7 @@ class ProfileImage(APIView):
         serializer = self.serializer_class(data=request.data, context={"user": request.user})
         if serializer.is_valid():
             serializer.save()
-            msg=strings.image_upload_successFully
+            msg = strings.image_upload_successFully
             return response(condition=1, message=msg, status=status.HTTP_200_OK)
 
         else:
@@ -37,7 +49,7 @@ class ProfileImage(APIView):
 
     def delete(self, request):
         user = request.user
-        user.image=None
+        user.image = None
         user.save()
         msg = strings.profile_image_delete_success
         return response(condition=1, message=msg, status=status.HTTP_200_OK)
@@ -45,7 +57,8 @@ class ProfileImage(APIView):
 
 class UserProfile(APIView):
     permission_class = [IsAuthenticated]
-    serializer_class=ProfileSerializer
+    serializer_class = ProfileSerializer
+
     def get(self, request):
         user = request.user
         profie = self.serializer_class(user)
@@ -56,27 +69,29 @@ class UserProfile(APIView):
         serializer = self.serializer_class(data=request.data, context={"user": request.user})
         if serializer.is_valid():
             serializer.save()
-            msg=strings.profile_change_successfully
+            msg = strings.profile_change_successfully
             return response(condition=1, message=msg, status=status.HTTP_200_OK)
 
         else:
             return response(condition=0, message=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 class ResetPassword(APIView):
-    serializer_class=ResetPassWordSerializer
-    def patch(self,request):
+    serializer_class = ResetPassWordSerializer
+
+    def patch(self, request):
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
-            username=serializer.validated_data.get("username")
-            phone_number=serializer.validated_data.get("phone_number")
+            username = serializer.validated_data.get("username")
+            phone_number = serializer.validated_data.get("phone_number")
             try:
-                profile=Profile.objects.get(username=username, phone_number=phone_number)
+                profile = Profile.objects.get(username=username, phone_number=phone_number)
                 profile.set_password(profile.phone_number)
                 profile.save()
-                msg=strings.password_changed_to_phone_number
+                msg = strings.password_changed_to_phone_number
                 return response(condition=1, message=msg, status=status.HTTP_200_OK)
             except:
-                msg=strings.user_dosent_exist
+                msg = strings.user_dosent_exist
                 return response(condition=0, message=msg, status=status.HTTP_401_UNAUTHORIZED)
 
         else:
@@ -85,17 +100,18 @@ class ResetPassword(APIView):
 
 class ChangePassword(APIView):
     permission_classes = [IsAuthenticated]
-    serializer_class=ChangePassWordSerializer
-    def patch(self,request):
+    serializer_class = ChangePassWordSerializer
+
+    def patch(self, request):
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
-            password=serializer.validated_data.get("password")
-            user=request.user
+            password = serializer.validated_data.get("password")
+            user = request.user
             if user.check_password(password):
-                newpassword=serializer.validated_data.get("newpassword")
+                newpassword = serializer.validated_data.get("newpassword")
                 user.set_password(newpassword)
                 user.save()
-                msg=strings.password_change
+                msg = strings.password_change
                 return response(condition=1, message=msg, status=status.HTTP_200_OK)
 
             else:
@@ -103,4 +119,3 @@ class ChangePassword(APIView):
                 return response(condition=0, message=msg, status=status.HTTP_401_UNAUTHORIZED)
         else:
             return response(condition=0, message=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-

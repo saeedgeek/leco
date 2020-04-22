@@ -2,14 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983cb0a0-558c-4c44-a093-1f1d1df53119" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/center/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Leco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Leco.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leco/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Leco/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leco/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Leco/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/migrations/0002_agent_center.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/migrations/0003_auto_20200331_0038.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/center/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/center/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/center/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/center/migrations/0002_center_profile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/center/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/center/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/center/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/center/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/center/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/center/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/center/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/center/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_room/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_room/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_room/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_room/migrations/0002_auto_20200331_0038.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_room/migrations/0003_auto_20200331_0038.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_room/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_room/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_room/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_room/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_room/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_room/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_room/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_room/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/migrations/0002_student_profile.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/student/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/student/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/student/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/student/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/migrations/0002_teacher_profile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/migrations/0002_auto_20200331_0056.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/field_validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/field_validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/global_var.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/global_var.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/make_response.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/make_response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/permissions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/strings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +66,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="Leco" is-module-sdk="true">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+    <option name="myUseModuleSdk" value="true" />
+    <option name="myModuleName" value="Leco" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="JupyterTrust" id="ac105697-fb29-4d72-9b02-550defdec0d4" />
   <component name="ProjectId" id="1Zoq6aygdqYwz1O0UEsnTa8T8uW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,17 +83,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../venv" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../venv" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/agent" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Leco" type="Python.DjangoServer" factoryName="Django server">
@@ -90,7 +148,24 @@
       <workItem from="1585613717795" duration="1180000" />
       <workItem from="1585615385687" duration="1045000" />
       <workItem from="1585649954185" duration="24840000" />
-      <workItem from="1585736998860" duration="19000" />
+      <workItem from="1585736998860" duration="185000" />
+      <workItem from="1585759798920" duration="13458000" />
+      <workItem from="1585780936653" duration="187000" />
+      <workItem from="1585781528790" duration="43000" />
+      <workItem from="1585781993656" duration="7737000" />
+      <workItem from="1585825803359" duration="4861000" />
+      <workItem from="1586331488636" duration="3000" />
+      <workItem from="1586420245966" duration="125000" />
+      <workItem from="1586599090312" duration="414000" />
+      <workItem from="1586601396668" duration="2490000" />
+      <workItem from="1586689511735" duration="27000" />
+      <workItem from="1586983930178" duration="108000" />
+      <workItem from="1586984053341" duration="14000" />
+      <workItem from="1587054657863" duration="433000" />
+      <workItem from="1587110196067" duration="5139000" />
+      <workItem from="1587581613536" duration="309000" />
+      <workItem from="1587582067766" duration="100000" />
+      <workItem from="1587582182027" duration="1196000" />
     </task>
     <servers />
   </component>
@@ -98,10 +173,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="214" width="424" height="491" key="FileChooserDialogImpl" timestamp="1585651512086">
+    <state x="790" y="595" width="515" height="451" key="EnvironmentVariablesDialog" timestamp="1586420356039">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
-    <state x="794" y="214" width="424" height="491" key="FileChooserDialogImpl/58.27.1862.1053@58.27.1862.1053" timestamp="1585651512086" />
+    <state x="790" y="595" width="515" height="451" key="EnvironmentVariablesDialog/58.27.1862.1053@58.27.1862.1053" timestamp="1586420356039" />
+    <state x="517" y="589" width="424" height="491" key="FileChooserDialogImpl" timestamp="1585781111343">
+      <screen x="58" y="27" width="1862" height="1053" />
+    </state>
+    <state x="517" y="589" width="424" height="491" key="FileChooserDialogImpl/58.27.1862.1053@58.27.1862.1053" timestamp="1585781111343" />
     <state width="1816" height="275" key="GridCell.Tab.0.bottom" timestamp="1585695889745">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
@@ -118,21 +197,36 @@
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
     <state width="1816" height="275" key="GridCell.Tab.0.right/58.27.1862.1053@58.27.1862.1053" timestamp="1585695889745" />
-    <state x="478" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1585737017128">
+    <state x="535" y="343" width="1022" height="737" key="SettingsEditor" timestamp="1587582167172">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
-    <state x="478" y="188" width="1022" height="737" key="SettingsEditor/58.27.1862.1053@58.27.1862.1053" timestamp="1585737017128" />
+    <state x="535" y="343" width="1022" height="737" key="SettingsEditor/58.27.1862.1053@58.27.1862.1053" timestamp="1587582167172" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1585578450666">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
     <state width="498" height="446" key="SwitcherDM/58.27.1862.1053@58.27.1862.1053" timestamp="1585578450666" />
-    <state x="642" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585737002793">
+    <state x="642" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1587582182653">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
-    <state x="642" y="380" key="com.intellij.ide.util.TipDialog/58.27.1862.1053@58.27.1862.1053" timestamp="1585737002793" />
-    <state x="652" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1585605634110">
+    <state x="642" y="380" key="com.intellij.ide.util.TipDialog/58.27.1862.1053@58.27.1862.1053" timestamp="1587582182653" />
+    <state x="652" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1585776381424">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
-    <state x="652" y="259" width="672" height="678" key="search.everywhere.popup/58.27.1862.1053@58.27.1862.1053" timestamp="1585605634110" />
+    <state x="652" y="259" width="672" height="678" key="search.everywhere.popup/58.27.1862.1053@58.27.1862.1053" timestamp="1585776381424" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/strings.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/user/views.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
