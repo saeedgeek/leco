@@ -53,7 +53,7 @@ CITY = [
         "persian_name": "خراسان جنوبی"
     },
     {
-        "nkhorasan_rame": "khorasan_r",
+        "name": "khorasan_r",
         "persian_name": "خراسان رضوی"
     },
     {
