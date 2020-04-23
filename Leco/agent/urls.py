@@ -1,5 +1,5 @@
 from django.urls import path
-# from .views import CreateAgent
+from .views import CreateAgent
 urlpatterns = [
-# path("create_agent",CreateAgent.as_view())
+    path("create_agent", CreateAgent.as_view())
 ]

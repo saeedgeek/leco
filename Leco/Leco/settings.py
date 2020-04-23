@@ -104,26 +104,26 @@ WSGI_APPLICATION = 'Leco.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'Leco',
-    #     'USER': 'saeed',
-    #     'PASSWORD': '3241550877',
-    #     'HOST': 'localhost',
-    #     'PORT': '3306',
-    # }
-    #fandogh
-        'default': {
+    'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Leco',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'mysql',
+        'USER': 'saeed',
+        'PASSWORD': '3241550877',
+        'HOST': 'localhost',
         'PORT': '3306',
-    }
+    },
 
 
-}
+    #     'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'Leco',
+    #     'USER': 'root',
+    #     'PASSWORD': 'root',
+    #     'HOST': 'mysql',
+    #     'PORT': '3306',
+    # }
+
+ }
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 

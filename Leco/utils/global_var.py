@@ -43,7 +43,7 @@ FIELD_CHOICES = [
 USER_TYPE_CHOICES = [
     ("teacher", "معلم"),
     ("student", "دانش آموز"),
-    ("agent", "نمیاینده"),
+    ("agent", "نماینده"),
     ("center", "دفتر مرکزی")
 ]
 
